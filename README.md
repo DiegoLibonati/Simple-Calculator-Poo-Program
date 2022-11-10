@@ -43,6 +43,42 @@ Button(width=11, height=4, text="TEXT TO SHOW IN SCREEN", relief="flat", bg="#5C
 
 ## Video
 
-
 https://user-images.githubusercontent.com/99032604/198900792-216c32f7-b5e8-415e-b7ec-5808dbd6d55f.mp4
 
+## Documentation
+
+The `show()` method will display the value of that button every time a button is touched:
+
+```
+def show(self, value):
+
+    if self.entry_value == "ERROR" or self.entry_value == "0":
+        self.entry_value = ""
+        self.equation.set(self.entry_value)
+        self.entry_value += str(value)
+        self.equation.set(self.entry_value)
+    else:
+        self.entry_value += str(value)
+        self.equation.set(self.entry_value)
+```
+
+The `clear()` method will clear the main screen:
+
+```
+def clear(self):
+    self.entry_value = ""
+    self.equation.set(self.entry_value)
+```
+
+The `solve()` method will perform all the mathematical operations on the numbers entered:
+
+```
+def solve(self):
+    try:
+        result=eval(self.entry_value)
+        self.equation.set(result)
+        self.entry_value = f"{result}"
+    except:
+        self.entry_value = "ERROR"
+        self.equation.set(self.entry_value)
+```
