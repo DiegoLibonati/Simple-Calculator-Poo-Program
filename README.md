@@ -10,14 +10,6 @@
 
 I made a simple calculator with python using tkinter as user interface. It is also developed with object oriented programming. This calculator can subtract, multiply, divide and add. You can also use parenthesis, get percentage and perform the c function. Last but not least you can use the comma.
 
-## Feel free to edit my code
-
-If you want to add a new button you need to do this:
-
-```
-Button(width=11, height=4, text="TEXT TO SHOW IN SCREEN", relief="flat", bg="#5C6672", command=lambda:self.YOURFUNCTIONNAME()).place(x=X POSITION, y=Y POSITION)
-```
-
 ## Technologies used
 
 1. Python
@@ -80,4 +72,10 @@ def solve(self):
     except:
         self.entry_value = "ERROR"
         self.equation.set(self.entry_value)
+```
+
+If you want to add a new button you need to do this:
+
+```
+Button(width=11, height=4, text="TEXT TO SHOW IN SCREEN", relief="flat", bg="#5C6672", command=lambda:self.YOURMETHODNAME()).place(x=X POSITION, y=Y POSITION)
 ```
