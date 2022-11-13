@@ -30,7 +30,7 @@ I made a simple calculator with python using tkinter as user interface. It is al
 
 ## Portfolio Link
 
-`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Simple%20calculator%20with%20poo%20program`
+`https://diegolibonati.github.io/DiegoLibonatiWeb/#/projects?q=Simple%20Calculator%20With%20Poo%20Program`
 
 ## Video
 
